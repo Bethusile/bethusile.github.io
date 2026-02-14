@@ -20,11 +20,11 @@ const Contact = ({ id }) => {
             <div className="contact-methods">
               <div className="method-item">
                 <i className="far fa-envelope"></i>
-                <a href="mailto:bethusile@example.com">bethusilejm@gmail.com</a>
+                <a href="mailto:bethusilejm@gmail.com">bethusilejm@gmail.com</a>
               </div>
               <div className="method-item">
                 <i className="fas fa-phone-alt"></i>
-                <a href="tel:+27000000000">+27 (73) 894 9483</a>
+                <a href="tel:+27738949483">+27 (73) 894 9483</a>
               </div>
             </div>
 

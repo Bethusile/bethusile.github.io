@@ -429,14 +429,14 @@
   }
 }
 
-/*additions */
-/* Header styling with the pink underline from screenshot */
+/* Section & Header */
+.about-section { padding: 80px 0; background: #fff; }
+
 .sub-header-pink {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: #1e293b;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  color: #0f172a;
+  margin: 50px 0 25px;
   position: relative;
   display: inline-block;
 }
@@ -445,145 +445,89 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -8px;
-  width: 40px;
+  bottom: -6px;
+  width: 32px;
   height: 3px;
   background-color: #C11C84;
 }
 
-/* Availability Cards */
+/* Compact Availability Cards */
 .availability-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 .availability-card {
   background-color: #f8fafc;
-  padding: 30px;
-  border-radius: 12px;
-  border: 1px solid #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #f1f5f9;
 }
 
-.card-icon {
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.card-icon { color: #C11C84; font-size: 1.1rem; }
+
+.availability-card h4 { font-size: 0.95rem; font-weight: 700; color: #1e293b; margin: 0; }
+
+.availability-card p { font-size: 0.85rem; color: #64748b; margin: 4px 0; line-height: 1.4; }
+
+.availability-card .sub-text { color: #94a3b8; font-size: 0.75rem; }
+
+/* Location & Checklist Alignment */
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 900px;
+}
+
+.location-item, .hire-item {
+  display: flex;
+  align-items: flex-start; /* Keeps icon at the top of multi-line text */
+  gap: 12px;
+}
+
+.location-icon, .hire-icon {
   color: #C11C84;
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-}
-
-.availability-card h4 {
   font-size: 1.1rem;
-  margin-bottom: 10px;
-  color: #0f172a;
+  flex-shrink: 0; /* Prevents icon from squishing */
+  margin-top: 2px;
 }
 
-.availability-card p {
+.location-text h5, .hire-text strong {
   font-size: 0.95rem;
-  color: #475569;
-  margin: 0;
-}
-
-.availability-card .sub-text {
-  font-size: 0.85rem;
-  color: #94a3b8;
-  margin-top: 5px;
-}
-
-/* Location Items */
-.location-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.location-item {
-  display: flex;
-  gap: 15px;
-  max-width: 350px;
-}
-
-.location-icon {
-  color: #C11C84;
-  font-size: 1.2rem;
-  margin-top: 4px;
-}
-
-.location-item h5 {
-  font-size: 1rem;
-  margin-bottom: 5px;
   color: #1e293b;
+  margin: 0 0 4px 0;
 }
 
-.location-item p {
-  font-size: 0.9rem;
+.location-text p, .hire-text p {
+  font-size: 0.85rem;
   color: #64748b;
+  margin: 0;
   line-height: 1.5;
 }
 
-/* Why Hire Me Checklist */
+/* Checklist Spacing */
 .hire-me-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  max-width: 900px;
 }
 
-.hire-item {
-  display: flex;
-  gap: 15px;
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .availability-grid, .location-grid, .hire-me-list {
+    grid-template-columns: 1fr;
+  }
 }
-
-.hire-icon {
-  color: #C11C84;
-  font-size: 1.2rem;
-  margin-top: 3px;
-}
-
-.hire-item strong {
-  display: block;
-  font-size: 1rem;
-  color: #1e293b;
-  margin-bottom: 2px;
-}
-
-.hire-item p {
-  font-size: 0.9rem;
-  color: #64748b;
-}
-
-/* Pricing Section */
-.pricing-container {
-  background-color: #f8fafc;
-  padding: 40px;
-  border-radius: 12px;
-  border: 1px solid #e2e8f0;
-  max-width: 600px;
-}
-
-.pricing-label {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1e293b;
-  margin-bottom: 10px;
-}
-
-.pricing-value {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #C11C84;
-  margin-bottom: 10px;
-}
-
-.pricing-value span {
-  font-size: 1rem;
-  color: #94a3b8;
-  font-weight: 400;
-}
-
-.pricing-note {
-  font-size: 0.9rem;
-  color: #64748b;
-}
-
 /*************Services******************/
 .services-section {
   background-color: #f1f1f1; 
