@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Projects from './components/Projects';
 import Rates from './components/Rates';
 import Contact from './components/Contact';
+import BackToTop from './components/BackToTop';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Rates id="rates"/>
       <About id="about" />
       <Contact id="contact"/>
+      <BackToTop id="top"/>
     </div>
   );
 }

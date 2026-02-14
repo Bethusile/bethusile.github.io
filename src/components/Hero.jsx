@@ -1,9 +1,16 @@
 import React from 'react';
-import '../App.css'; // all styles, including hero and navbar
+import '../App.css'; 
+// Fixed the path: added the slash after the dots
+import africa1 from '../assets/images/africa1.jpg'; 
 
 const Hero = () => {
   return (
-    <section id="home" className="hero">
+    <section 
+      id="home" 
+      className="hero" 
+      style={{backgroundImage: `url(${africa1})` 
+      }}
+    >
       <div className="hero-content">
         <h1>
           Build Modern <span className="highlight">Web & Software</span> Solutions

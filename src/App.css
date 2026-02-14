@@ -124,11 +124,13 @@
 /* Hero Section */
 .hero {
   min-height: 100vh;
+  /* Use svh if supported to account for mobile address bars */
+  min-height: 100svh; 
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #ffffff; /* text white to show on image */
+  color: #ffffff;
   padding: 0 2rem;
   position: relative;
 
@@ -137,21 +139,35 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  
+  /* FIX: Change 'fixed' to 'scroll' for mobile compatibility */
+  background-attachment: scroll; 
+  overflow: hidden;
+}
 
-  /* Optional overlay for better readability */
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7); /* semi-transparent dark overlay */
-    z-index: 0;
+/* Optional: Re-enable fixed parallax ONLY for desktop */
+@media (min-width: 1024px) {
+  .hero {
+    background-attachment: fixed;
   }
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 0;
+}
+
+/* Ensure content sits above the overlay */
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
 .hero-content {
   position: relative;
   z-index: 1; /* so text sits above overlay */
@@ -263,6 +279,53 @@
 
   .btn {
     min-width: 140px;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  background-color: #C11C84;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  
+  /* Start hidden */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.4s ease-in-out;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background-color: #a0176d; /* Slightly darker pink */
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
   }
 }
 
