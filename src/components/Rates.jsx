@@ -13,7 +13,7 @@ const Rates = ({ id }) => {
         <div className="hourly-rate-container">
           <div className="hourly-card">
             <p className="rate-label">Hourly Rate</p>
-            <h3 className="rate-value">R150 – R300 <span>/ hour</span></h3>
+            <h3 className="rate-value">R200 – R400 <span>/ hour</span></h3>
             <p className="rate-note">Rate depends on scope and complexity of the project.</p>
           </div>
         </div>
@@ -26,14 +26,14 @@ const Rates = ({ id }) => {
           {/* Basic Website */}
           <div className="package-card">
             <p className="p-name">Basic Website</p>
-            <h4 className="p-price">R2,000 – R4,000</h4>
+            <h4 className="p-price">R2,500 – R4,000</h4>
             <p className="p-desc">Simple static site, a few pages</p>
           </div>
 
           {/* Portfolio Website */}
           <div className="package-card">
             <p className="p-name">Portfolio Website</p>
-            <h4 className="p-price">R3,000 – R6,000</h4>
+            <h4 className="p-price">R3,500 – R6,000</h4>
             <p className="p-desc">Personal or professional portfolio with projects</p>
           </div>
 
@@ -47,7 +47,7 @@ const Rates = ({ id }) => {
 
         {/* Footer Disclaimer */}
         <p className="rates-footer-text">
-          Prices are based on current skill level, scope of work, and value delivered. 
+          Prices (measured in ZAR) are based on current skill level, scope of work, and value delivered. 
           I'm open to discussion depending on project requirements.
         </p>
       </div>

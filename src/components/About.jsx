@@ -29,7 +29,9 @@ const About = ({ id }) => {
             </span>
             <div className="info-content">
               <p className="info-label">Education</p>
-              <p className="info-value">BCom Hons CS & IS, BCom Accounting</p>
+              <p className="info-value">BCom Hons CS & IS, BCom Accounting,</p>
+              <p className="info-value">Microsoft Certified - Azure Fundamentals</p>
+              <p className="info-value">Google Certified - Data Analytics</p>
             </div>
           </div>
         </div>
@@ -37,7 +39,7 @@ const About = ({ id }) => {
         <p className="about-description">
           Junior developer with a background in accounting and computer science. 
           I enjoy turning ideas into functional, well-structured web applications 
-          while writing clean code and solving real problems.
+          while writing clean code and solving real problems. Currently learning Data Engineering.
         </p>
 
         {/* Availability Section */}
@@ -90,29 +92,11 @@ const About = ({ id }) => {
             <i className="fas fa-map-marker-alt location-icon"></i>
             <div className="location-text">
               <h5>Based In</h5>
-              <p>South Africa — willing to relocate for the right role.</p>
+              <p>Gqeberha — willing to relocate for the right role.</p>
             </div>
           </div>
         </div>
 
-        {/* Why Hire Me Checklist */}
-        <h3 className="sub-header-pink">Why Hire Me</h3>
-        <div className="hire-me-list">
-          {[
-            { title: "Strong Work Ethic", desc: "I take ownership and deliver quality work under pressure." },
-            { title: "Clear Communication", desc: "I keep stakeholders informed and set honest expectations." },
-            { title: "Meets Deadlines", desc: "Reliable and punctual planning to deliver on time." },
-            { title: "Honest About Skill Level", desc: "Upfront about what I know and what I am learning." }
-          ].map((item, idx) => (
-            <div className="hire-item" key={idx}>
-              <i className="far fa-check-circle hire-icon"></i>
-              <div className="hire-text">
-                <strong>{item.title}</strong>
-                <p>{item.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

@@ -19,7 +19,7 @@ const Navbar = () => {
   const navLinks = [    
     { name: 'Services', href: '#services' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Rates', href: '#rates' },
+    { name: 'Pricing', href: '#rates' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -39,7 +39,7 @@ const Navbar = () => {
             className="dot-nav" 
             style={{ 
               // Logic: Starts pink (#C11C84), gradually becomes white (#ffffff)
-              color: scrollOpacity > 0.3 ? '#ffffff' : '#C11C84',
+              color: scrollOpacity > 0.7 ? '#ffffff' : '#C11C84',
               transition: 'color 0.8s ease' 
             }}
           >

@@ -121,7 +121,7 @@
   }
 }
 
-/* Hero Section */
+/************************ Hero Section ***************************/
 .hero {
   min-height: 100vh;
   /* Use svh if supported to account for mobile address bars */
@@ -329,7 +329,7 @@
   }
 }
 
-/***** About *************************/
+/************************* About *************************/
 .about-section {
   padding: 60px 0 40px; /* Reduced top and bottom padding */
   background-color: #f1f1f1; 

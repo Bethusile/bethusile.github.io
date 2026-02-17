@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css'; 
-// Fixed the path: added the slash after the dots
 import africa1 from '../assets/images/africa1.jpg'; 
 
 const Hero = () => {
@@ -15,7 +14,7 @@ const Hero = () => {
         <h1>
           Build Modern <span className="highlight">Web & Software</span> Solutions
         </h1>
-        <br/><br/>
+        <br/>
         <p>
           I'm Bethusile, a freelance developer crafting responsive websites and software solutions
           that help businesses grow online.
@@ -29,7 +28,7 @@ const Hero = () => {
             Hire Me
           </a>
         </div>
-        <br/><br/><br/><br/>
+        <br/><br/><br/>
         <div className="scroll-down">
           <span className="arrow">↓</span>
         </div>

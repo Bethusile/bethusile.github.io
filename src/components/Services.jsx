@@ -47,8 +47,8 @@ const Services = ({ id }) => {
     }
   ];
 
-  const techStack = ["React", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS", "Python", "SQL", "Git", "Node.js"];
-  const openTo = ["Graduate roles", "Junior developer positions", "Freelance projects", "Part-time", "Contract work"];
+  const techStack = ["React", "TypeScript", "JavaScript", "HTML/CSS", "Python", "SQL", "Git", "Node.js", "Java", "ASP.Net", "C#", "Android"];
+  const openTo = ["Graduate roles", "Junior developer positions", "Junior Data Engineer positions", "Freelance projects", "Part-time", "Contract work"];
 
   return (
     <section id={id} className="services-section">
@@ -68,7 +68,7 @@ const Services = ({ id }) => {
 
         {/* Tech Stack Section */}
         <div className="extra-info-group">
-          <h3 className="sub-heading">Tech Stack</h3>
+          <h3 className="sub-header-pink">Tech Stack</h3>
           <div className="pill-container">
             {techStack.map((tech, i) => (
               <span key={i} className="tech-pill">{tech}</span>
@@ -78,13 +78,33 @@ const Services = ({ id }) => {
 
         {/* Open To Section */}
         <div className="extra-info-group">
-          <h3 className="sub-heading">Open To</h3>
+          <h3 className="sub-header-pink">Open To</h3>
           <div className="pill-container">
             {openTo.map((role, i) => (
               <span key={i} className="open-pill">{role}</span>
             ))}
           </div>
         </div>
+
+        {/* Why Hire Me Checklist */}
+        <h3 className="sub-header-pink">Why Hire Me</h3>
+        <div className="hire-me-list">
+          {[
+            { title: "Strong Work Ethic", desc: "I take ownership and deliver quality work under pressure." },
+            { title: "Clear Communication", desc: "I keep stakeholders informed and set honest expectations." },
+            { title: "Meets Deadlines", desc: "Reliable and punctual planning to deliver on time." },
+            { title: "Honest About Skill Level", desc: "Upfront about what I know and what I am learning." }
+          ].map((item, idx) => (
+            <div className="hire-item" key={idx}>
+              <i className="far fa-check-circle hire-icon"></i>
+              <div className="hire-text">
+                <strong>{item.title}</strong>
+                <p>{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
       </div>
     </section>
   );
