@@ -42,6 +42,25 @@ const About = ({ id }) => {
           while writing clean code and solving real problems. Currently learning Data Engineering.
         </p>
 
+        {/* Why Hire Me Checklist */}
+        <h3 className="sub-header-pink">Why Hire Me</h3>
+        <div className="hire-me-list">
+          {[
+            { title: "Strong Work Ethic", desc: "I take ownership and deliver quality work under pressure." },
+            { title: "Clear Communication", desc: "I keep stakeholders informed and set honest expectations." },
+            { title: "Meets Deadlines", desc: "Reliable and punctual planning to deliver on time." },
+            { title: "Honest About Skill Level", desc: "Upfront about what I know and what I am learning." }
+          ].map((item, idx) => (
+            <div className="hire-item" key={idx}>
+              <i className="far fa-check-circle hire-icon"></i>
+              <div className="hire-text">
+                <strong>{item.title}</strong>
+                <p>{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
         {/* Availability Section */}
         <h3 className="sub-header-pink">Availability</h3>
         <div className="availability-grid">

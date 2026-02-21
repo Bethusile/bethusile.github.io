@@ -22,10 +22,10 @@ const Contact = ({ id }) => {
                 <i className="far fa-envelope"></i>
                 <a href="mailto:hello@bethusile.co.za">hello@bethusile.co.za</a>
               </div>
-              <div className="method-item">
+         {/*  <div className="method-item">
                 <i className="fas fa-phone-alt"></i>
                 <a href="tel:+27738949483">+27 (73) 894 9483</a>
-              </div>
+              </div> */}
             </div>
 
             <div className="social-links-contact">
@@ -50,6 +50,7 @@ const Contact = ({ id }) => {
             </form>
           </div>
         </div>
+        
 
         {/* Bottom Footer Area */}
         <div className="footer-bottom">

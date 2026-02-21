@@ -31,7 +31,8 @@ const Projects = ({ id }) => {
             { name: "MUI", icon: "fas fa-code" }
         ],
         image: marketingImg, 
-        link: "https://github.com/Bethusile/Marketing-Campaign-Manager" 
+        link: "https://github.com/Bethusile/Marketing-Campaign-Manager",
+        demo: "https://bethusilejm.netlify.app/"
       },
       { 
         title: "Tuckshop Stock Manager", 
@@ -45,7 +46,8 @@ const Projects = ({ id }) => {
             { name: "React", icon: "fab fa-react" }
         ],
         image: tuckshopImg, 
-        link: "https://github.com/Bethusile/TuckShop" 
+        link: "https://github.com/Bethusile/TuckShop",
+        demo: "https://bethusilejm.netlify.app/"
       },
       { 
         title: "Lasertag Web Game", 
@@ -57,7 +59,8 @@ const Projects = ({ id }) => {
             { name: "TypeScript", icon: "fas fa-code" }
         ],
         image: lasertagImg, 
-        link: "https://github.com/Bethusile/BBD-Laser-Tag-Game" 
+        link: "https://github.com/Bethusile/BBD-Laser-Tag-Game" ,
+        demo: "https://bethusilejm.netlify.app/"
       }
     ],
     'Microsoft Fabric': [
@@ -86,7 +89,8 @@ const Projects = ({ id }) => {
             { name: "SQL Server", icon: "fas fa-database" }
         ],
         image: lostFoundImg, 
-        link: "https://github.com/Thango25/ProjectBB" 
+        link: "https://github.com/Thango25/ProjectBB" ,
+        demo: "https://bethusilejm.netlify.app/"
       },
       { 
         title: "Afro-Belle E-Commerce", 
@@ -99,7 +103,8 @@ const Projects = ({ id }) => {
             { name: "Azure", icon: "fab fa-microsoft" }
         ],
         image: ab1Img, 
-        link: "https://github.com/Bethusile/Afro-Belle-E-Commerce" 
+        link: "https://github.com/Bethusile/Afro-Belle-E-Commerce" ,
+        demo: "https://bethusilejm.netlify.app/"
       }
     ],
     'Power BI': [
@@ -155,7 +160,9 @@ const Projects = ({ id }) => {
             {currentProjects.map((proj, index) => (
               <div key={index} className={`project-card-full ${index === currentIndex ? 'active-card' : 'inactive-card'}`}>
                 <div className="image-header-full">
-                  <img src={proj.image} alt={proj.title} />
+                  <a href={proj.demo} target="_blank" rel="noreferrer">
+                    <img src={proj.image} alt={proj.title} />
+                  </a>
                 </div>
                 
                 <div className="project-content-full text-center">

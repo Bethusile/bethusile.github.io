@@ -531,7 +531,7 @@ html {
     grid-template-columns: 1fr;
   }
 }
-/*************Services******************/
+/*************************** Services **************************/
 .services-section {
   background-color: #f1f1f1; 
   padding: 80px 0;
@@ -622,7 +622,7 @@ html {
   }
 }
 
-/******************* PROJECTS SECTION ********************/
+/************************** PROJECTS SECTION ***************************/
 .projects-section {
   padding: 80px 0;
   background: #ffffff;
@@ -744,6 +744,14 @@ html {
   color: #C11C84;
   font-size: 1.8rem;
   text-decoration: none;
+}
+
+.image-header-full img {
+  transition: transform 0.4s ease;
+}
+
+.project-card-full:hover img {
+  transform: scale(1.015);
 }
 
 /* RESTORED ORIGINAL NAV TOOLS */
