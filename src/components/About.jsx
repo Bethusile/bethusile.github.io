@@ -29,9 +29,9 @@ const About = ({ id }) => {
             </span>
             <div className="info-content">
               <p className="info-label">Education</p>
-              <p className="info-value">BCom Hons CS & IS, BCom Accounting,</p>
-              <p className="info-value">Microsoft Certified - Azure Fundamentals</p>
-              <p className="info-value">Google Certified - Data Analytics</p>
+              <p className="info-value">-BCom Hons CS & IS, BCom Accounting,</p>
+              <p className="info-value">-Microsoft Certified - Azure Fundamentals,</p>
+              <p className="info-value">-Google Certified - Data Analytics</p>
             </div>
           </div>
         </div>

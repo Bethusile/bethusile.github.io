@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* NAVBAR BASE */
 .navbar {
   position: fixed;
@@ -141,16 +144,16 @@
   background-repeat: no-repeat;
   
   /* FIX: Change 'fixed' to 'scroll' for mobile compatibility */
-  background-attachment: scroll; 
+  background-attachment: fixed; 
   overflow: hidden;
 }
 
-/* Optional: Re-enable fixed parallax ONLY for desktop */
+/* Optional: Re-enable fixed parallax ONLY for desktop 
 @media (min-width: 1024px) {
   .hero {
     background-attachment: fixed;
   }
-}
+}  */
 
 .hero::before {
   content: '';
