@@ -8,18 +8,18 @@ const About = ({ id }) => {
         <h2 className="section-title">About Betana</h2>
 
         <p className="about-description">
-          Betana is a registered digital solutions studio based in South Africa.
-          We design and build web applications, data systems, and software products for
-          businesses across South Africa - combining technical depth with a clear focus
-          on delivering real business value.
-        </p>
+  Betana is a registered digital solutions studio based in Gqeberha, Eastern Cape.
+  We design and build web applications, data systems, and software products for
+  businesses across South Africa — combining technical depth with a clear focus
+  on delivering real business value.
+</p>
 
-        <p className="about-description" style={{ marginTop: '1rem' }}>
-          The studio is led by Bethusile Mafumana (Managing Director), a computer scientist
-          and data engineer with a background in accounting and financial analytics.
-          Betana operates as a lean, skilled team - bringing together design, engineering,
-          business analysis, and strategic thinking on every engagement.
-        </p>
+<p className="about-description" style={{ marginTop: '1rem' }}>
+  We are a lean, skilled team bringing together design, engineering, business
+  analysis, and strategic thinking on every engagement. Every project we take on
+  is treated as a partnership — we invest in understanding your business before
+  we write a single line of code.
+</p>
 
         {/* How We Work */}
         <h3 className="sub-header-pink">How We Work</h3>

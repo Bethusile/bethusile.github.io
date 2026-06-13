@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- GitHub Pages SPA routing fix -->
+  <script>
+    (function() {
+      var p = window.location.search.slice(1).split('&')
+        .find(function(s) { return s.startsWith('p='); });
+      if (p) {
+        var path = decodeURIComponent(p.slice(2));
+        window.history.replaceState(null, null, '/' + path);
+      }
+    })();
+  </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ES5K06HRRX"></script>
     <script>

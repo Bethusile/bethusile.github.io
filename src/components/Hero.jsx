@@ -10,16 +10,13 @@ const Hero = () => {
       style={{ backgroundImage: `url(${africa1})` }}
     >
       <div className="hero-content">
-        <p className="hero-eyebrow">Digital Solutions Studio ·</p>
+        <p className="hero-eyebrow">· Digital Solutions Studio ·</p>
         <h1>
           We Build <span className="highlight">Purposeful</span> Digital Products
         </h1>
         <br />
-        <p>
-          Betana is a registered digital studio delivering web applications,
-          data solutions, and software products for businesses across South Africa.
-        </p>
-        <br /><br />
+        
+        <br />
         <div className="hero-buttons">
           <a href="/projects" className="btn btn-projects">
             Our Work
@@ -28,7 +25,7 @@ const Hero = () => {
             Contact Us
           </a>
         </div>
-        <br /><br /><br />
+        <br />
         <div className="scroll-down">
           <span className="arrow">↓</span>
         </div>
