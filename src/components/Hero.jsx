@@ -1,34 +1,34 @@
 import React from 'react';
-import '../App.css'; 
-import africa1 from '../assets/images/africa1.jpg'; 
+import '../App.css';
+import africa1 from '../assets/images/africa1.jpg';
 
 const Hero = () => {
   return (
-    <section 
-      id="home" 
-      className="hero" 
-      style={{backgroundImage: `url(${africa1})` 
-      }}
+    <section
+      id="home"
+      className="hero"
+      style={{ backgroundImage: `url(${africa1})` }}
     >
       <div className="hero-content">
+        <p className="hero-eyebrow">Digital Solutions Studio ·</p>
         <h1>
-          Build Modern <span className="highlight">Web & Software</span> Solutions
+          We Build <span className="highlight">Purposeful</span> Digital Products
         </h1>
-        <br/>
+        <br />
         <p>
-          Crafting responsive websites and software solutions
-          that help businesses grow online.
+          Betana is a registered digital studio delivering web applications,
+          data solutions, and software products for businesses across South Africa.
         </p>
-        <br/><br/>
+        <br /><br />
         <div className="hero-buttons">
-          <a href="#projects" className="btn btn-projects">
-            View Projects
+          <a href="/projects" className="btn btn-projects">
+            Our Work
           </a>
           <a href="#contact" className="btn btn-hire">
             Contact Us
           </a>
         </div>
-        <br/><br/><br/>
+        <br /><br /><br />
         <div className="scroll-down">
           <span className="arrow">↓</span>
         </div>

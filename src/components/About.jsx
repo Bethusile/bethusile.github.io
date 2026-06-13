@@ -5,51 +5,30 @@ const About = ({ id }) => {
   return (
     <section id={id} className="about-section">
       <div className="section-container">
-        <h2 className="section-title">About Me</h2>
-        
-        {/* Core Info Grid */}
-        <div className="about-grid-system">
-          <div className="info-item">
-            <span className="info-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" />
-              </svg>
-            </span>
-            <div className="info-content">
-              <p className="info-label">Full Name</p>
-              <p className="info-value">Bethusile Mafumana</p>
-            </div>
-          </div>
-
-          <div className="info-item">
-            <span className="info-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 10L12 5l-10 5 10 5 10-5z" /><path d="M6 12v5c3 3 9 3 12 0v-5" />
-              </svg>
-            </span>
-            <div className="info-content">
-              <p className="info-label">Education</p>
-              <p className="info-value">-BCom Hons CS & IS, BCom Accounting,</p>
-              <p className="info-value">-Microsoft Certified - Azure Fundamentals,</p>
-              <p className="info-value">-Google Certified - Data Analytics</p>
-            </div>
-          </div>
-        </div>
+        <h2 className="section-title">About Betana</h2>
 
         <p className="about-description">
-          Junior developer with a background in accounting and computer science. 
-          I enjoy turning ideas into functional, well-structured web applications 
-          while writing clean code and solving real problems. Currently learning Data Engineering.
+          Betana is a registered digital solutions studio based in South Africa.
+          We design and build web applications, data systems, and software products for
+          businesses across South Africa - combining technical depth with a clear focus
+          on delivering real business value.
         </p>
 
-        {/* Why Hire Me Checklist */}
-        <h3 className="sub-header-pink">Why Hire Me</h3>
+        <p className="about-description" style={{ marginTop: '1rem' }}>
+          The studio is led by Bethusile Mafumana (Managing Director), a computer scientist
+          and data engineer with a background in accounting and financial analytics.
+          Betana operates as a lean, skilled team - bringing together design, engineering,
+          business analysis, and strategic thinking on every engagement.
+        </p>
+
+        {/* How We Work */}
+        <h3 className="sub-header-pink">How We Work</h3>
         <div className="hire-me-list">
           {[
-            { title: "Strong Work Ethic", desc: "I take ownership and deliver quality work under pressure." },
-            { title: "Clear Communication", desc: "I keep stakeholders informed and set honest expectations." },
-            { title: "Meets Deadlines", desc: "Reliable and punctual planning to deliver on time." },
-            { title: "Honest About Skill Level", desc: "Upfront about what I know and what I am learning." }
+            { title: "Transparent Communication", desc: "We keep clients informed at every stage and set honest expectations upfront." },
+            { title: "Quality Over Speed", desc: "We prioritise clean, maintainable solutions that hold up long after delivery." },
+            { title: "Deadline Accountability", desc: "Reliable planning and honest timelines — we deliver what we commit to." },
+            { title: "Honest Capability", desc: "We are upfront about what we can build today and where we are growing." },
           ].map((item, idx) => (
             <div className="hire-item" key={idx}>
               <i className="far fa-check-circle hire-icon"></i>
@@ -61,59 +40,67 @@ const About = ({ id }) => {
           ))}
         </div>
 
-        {/* Availability Section */}
-        <h3 className="sub-header-pink">Availability</h3>
+        {/* Engagement */}
+        <h3 className="sub-header-pink">Engagement</h3>
         <div className="availability-grid">
           <div className="availability-card">
             <div className="card-header">
               <i className="far fa-clock card-icon"></i>
               <h4>Working Hours</h4>
             </div>
-            <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-            <p className="sub-text">Weekends: Available on request</p>
+            <p>Monday – Friday: 8:00 AM – 5:00 PM</p>
+            <p className="sub-text">Weekends available on request</p>
           </div>
           <div className="availability-card">
             <div className="card-header">
               <i className="far fa-calendar-alt card-icon"></i>
-              <h4>Engagement Type</h4>
+              <h4>Project Types</h4>
             </div>
-            <p>Part-time, contract, or freelance</p>
-            <p className="sub-text">Open to full-time junior roles</p>
+            <p>Freelance, contract, or retainer</p>
+            <p className="sub-text">Short and long-term engagements</p>
           </div>
           <div className="availability-card">
             <div className="card-header">
               <i className="far fa-calendar-check card-icon"></i>
               <h4>Start Date</h4>
             </div>
-            <p>Available immediately</p>
-            <p className="sub-text">Flexible for the right role</p>
+            <p>Available for new projects</p>
+            <p className="sub-text">Contact us to discuss timelines</p>
           </div>
         </div>
 
-        {/* Work Location */}
-        <h3 className="sub-header-pink">Work Location</h3>
+        {/* Location */}
+        <h3 className="sub-header-pink">Location</h3>
         <div className="location-grid">
           <div className="location-item">
             <i className="fas fa-desktop location-icon"></i>
             <div className="location-text">
-              <h5>Remote (Preferred)</h5>
-              <p>Fully set up for remote work with dedicated workspace.</p>
+              <h5>Remote-First</h5>
+              <p>Fully equipped for remote delivery with reliable infrastructure.</p>
             </div>
           </div>
           <div className="location-item">
             <i className="fas fa-building location-icon"></i>
             <div className="location-text">
               <h5>Hybrid / On-Site</h5>
-              <p>Open to arrangements within South Africa.</p>
+              <p>Available for on-site work within South Africa by arrangement.</p>
             </div>
           </div>
           <div className="location-item">
             <i className="fas fa-map-marker-alt location-icon"></i>
             <div className="location-text">
               <h5>Based In</h5>
-              <p>Gqeberha - willing to relocate for the right role.</p>
+              <p>Gqeberha (Port Elizabeth), Eastern Cape.</p>
             </div>
           </div>
+        </div>
+
+        {/* Meet the Team link */}
+        <div className="meet-team-cta">
+          <p>Want to know who's behind the work?</p>
+          <a href="/projects#team" className="btn btn-projects">
+            Meet the Team →
+          </a>
         </div>
 
       </div>

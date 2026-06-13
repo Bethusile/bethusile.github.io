@@ -5,7 +5,7 @@ const Rates = ({ id }) => {
   return (
     <section id={id} className="rates-section">
       <div className="section-container">
-        
+
         {/* Main Section Title */}
         <h2 className="section-title">Pricing</h2>
 
@@ -23,33 +23,51 @@ const Rates = ({ id }) => {
 
         {/* Package Cards Grid */}
         <div className="package-grid">
-          {/* Basic Website */}
+
           <div className="package-card">
             <p className="p-name">Basic Website</p>
             <h4 className="p-price">R2,500 - R4,000</h4>
             <p className="p-desc">Simple static site, a few pages</p>
           </div>
 
-          {/* Portfolio Website */}
           <div className="package-card">
             <p className="p-name">Portfolio Website</p>
             <h4 className="p-price">R3,500 - R6,000</h4>
             <p className="p-desc">Personal or professional portfolio with projects</p>
           </div>
 
-          {/* Custom Web Application */}
           <div className="package-card">
             <p className="p-name">Custom Web Application</p>
             <h4 className="p-price">R8,000+</h4>
             <p className="p-desc">Custom functionality, backend logic, integrations</p>
           </div>
+
+          <div className="package-card">
+            <p className="p-name">Data Engineering & Analytics</p>
+            <h4 className="p-price">R6,000+</h4>
+            <p className="p-desc">Pipelines, dashboards, and analytical systems</p>
+          </div>
+
+          <div className="package-card">
+            <p className="p-name">UX Design & Prototyping</p>
+            <h4 className="p-price">R3,500+</h4>
+            <p className="p-desc">Wireframes, Figma prototypes, usability testing</p>
+          </div>
+
+          <div className="package-card">
+            <p className="p-name">Custom Tools & Maintenance</p>
+            <h4 className="p-price">R150 - R200 / hr</h4>
+            <p className="p-desc">Automation scripts, internal tools, ongoing support</p>
+          </div>
+
         </div>
 
         {/* Footer Disclaimer */}
         <p className="rates-footer-text">
-          Prices (measured in ZAR) are based on current skill level, scope of work, and value delivered. 
-          I'm open to discussion depending on project requirements.
+          Prices are in ZAR and based on scope, complexity, and value delivered.
+          We're open to discussion depending on your project requirements.
         </p>
+
       </div>
     </section>
   );

@@ -4,8 +4,8 @@ import '../App.css';
 const Services = ({ id }) => {
   const serviceList = [
     {
-      title: "Frontend Web Development",
-      desc: "Responsive, accessible interfaces built with HTML, CSS, JavaScript, and modern frameworks like React.",
+      title: "Web Application Development",
+      desc: "Full-stack web applications built end-to-end - custom frontends, robust APIs, database design, and production-ready deployments tailored to your business.",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
@@ -15,8 +15,8 @@ const Services = ({ id }) => {
       )
     },
     {
-      title: "Backend Development",
-      desc: "Server-side logic, APIs, and database integration for web applications.",
+      title: "Data Engineering & Analytics",
+      desc: "Automated data pipelines, business intelligence dashboards, and analytical systems that turn raw data into clear, decision-ready insight for your team.",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <ellipse cx="12" cy="5" rx="9" ry="3" />
@@ -26,8 +26,8 @@ const Services = ({ id }) => {
       )
     },
     {
-      title: "Full-Stack Web Applications",
-      desc: "End-to-end web solutions from UI design to deployment, tailored to your needs.",
+      title: "UX Design & Prototyping",
+      desc: "User-centred interface design from wireframes to interactive Figma prototypes - validating ideas and aligning stakeholders before a line of code is written.",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="10" />
@@ -37,8 +37,8 @@ const Services = ({ id }) => {
       )
     },
     {
-      title: "Website Maintenance & Custom Tools",
-      desc: "Bug fixes, feature updates, and small custom web tools or automation scripts.",
+      title: "Custom Tools & Maintenance",
+      desc: "Bespoke automation scripts, internal management tools, and ongoing support - eliminating manual work and keeping your digital systems running cleanly.",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
@@ -47,15 +47,11 @@ const Services = ({ id }) => {
     }
   ];
 
-  const techStack = ["React", "TypeScript", "JavaScript", "HTML/CSS", "Python", "SQL", "Git", "Node.js", "Java", "ASP.Net", "C#", "Android"];
-  const openTo = ["Graduate roles", "Junior developer positions", "Junior Data Engineer positions", "Freelance projects", "Part-time", "Contract work"];
-
   return (
     <section id={id} className="services-section">
       <div className="section-container">
-        <h2 className="section-title">What I Build</h2>
-        
-        {/* The 4 Main Cards */}
+        <h2 className="section-title">What We Do</h2>
+
         <div className="services-grid">
           {serviceList.map((service, index) => (
             <div key={index} className="service-card">
@@ -65,29 +61,6 @@ const Services = ({ id }) => {
             </div>
           ))}
         </div>
-
-        {/* Tech Stack Section */}
-        <div className="extra-info-group">
-          <h3 className="sub-header-pink">Tech Stack</h3>
-          <div className="pill-container">
-            {techStack.map((tech, i) => (
-              <span key={i} className="tech-pill">{tech}</span>
-            ))}
-          </div>
-        </div>
-
-        {/* Open To Section */}
-        <div className="extra-info-group">
-          <h3 className="sub-header-pink">Open To</h3>
-          <div className="pill-container">
-            {openTo.map((role, i) => (
-              <span key={i} className="open-pill">{role}</span>
-            ))}
-          </div>
-        </div>
-
-        
-
       </div>
     </section>
   );
