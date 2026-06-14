@@ -140,7 +140,7 @@ const About = ({ id }) => {
         <h2 className="section-title">About Betana</h2>
 
         <p className="about-description">
-          Betana is a registered digital solutions studio based in Gqeberha, Eastern Cape.
+          Betana is a registered digital solutions studio based in South Africa.
           We design and build web applications, data systems, and software products for
           businesses across South Africa - combining technical depth with a clear focus
           on delivering real business value.

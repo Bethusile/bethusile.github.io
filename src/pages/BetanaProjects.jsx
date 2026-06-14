@@ -23,7 +23,7 @@ const teamData = [
     initials: "BM",
     photo: bethusilePhoto,
     color: "#C11C84",
-    brief: "Founder of Betana. Leads strategy, data engineering, and technical direction.",
+    brief: "Leads strategy, software/data engineering, and technical direction.",
     detail: `Bethusile holds a BCom Honours in Computer Science and Information Systems (Nelson Mandela University, expected 2026) and a BCom in Accounting. She has hands-on experience in full-stack development, data engineering, and financial analytics — with a background spanning FNB, Discovery, and BBD Software Development.
 
 She is certified in Azure Fundamentals, Google Data Analytics, and Microsoft Fabric, and is currently leading Betana's flagship Fintech Anomaly Detection project. Her long-term focus is data-driven business strategy and risk analytics.`,
@@ -58,7 +58,7 @@ She is certified in Azure Fundamentals, Google Data Analytics, and Microsoft Fab
   {
     name: "Thabo Mootwana",
     role: "Business Development Manager",
-    initials: "T",
+    initials: "TM",
     photo: null,
     color: "#601250",
     brief: "Identifies and develops strategic partnerships and new business opportunities.",
