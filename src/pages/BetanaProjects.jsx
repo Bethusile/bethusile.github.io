@@ -13,7 +13,7 @@ import shellhubImg from '../assets/images/shellhub2.png';
 // Team photos
 import bethusilePhoto from '../assets/images/Bethusile_Photo.png';
 import simbaPhoto from '../assets/images/Simba.png';
-import palesaPhoto from '../assets/images/Palesa.jpeg';
+import palesaPhoto from '../assets/images/Palesa.png';
 
 // ── Team data ──────────────────────────────────────────────
 const teamData = [
@@ -71,43 +71,50 @@ const TeamCard = ({ member }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={`team-card ${open ? 'team-card-open' : ''}`}>
-
-      <div className="team-card-top">
-        <div
-          className="team-avatar"
-          style={!member.photo ? {
-            background: `linear-gradient(135deg, ${member.color}, #1e293b)`
-          } : {}}
-        >
-          {member.photo
-            ? <img src={member.photo} alt={member.name} />
-            : <span className="team-initials">{member.initials}</span>
-          }
-        </div>
-        <div className="team-card-info">
-          <h4 className="team-name">{member.name}</h4>
-          <p className="team-role">{member.role}</p>
-          <p className="team-brief">{member.brief}</p>
-        </div>
+    <div className="team-card">
+      {/* Full photo or gradient background */}
+      <div
+        className="team-photo-bg"
+        style={!member.photo ? {
+          background: `linear-gradient(160deg, ${member.color} 0%, #0f172a 100%)`
+        } : {}}
+      >
+        {member.photo
+          ? <img src={member.photo} alt={member.name} className="team-photo-full" />
+          : <span className="team-initials-large">{member.initials}</span>
+        }
       </div>
 
-      <button
-        className="team-toggle-btn"
-        onClick={() => setOpen(!open)}
-        aria-expanded={open}
-      >
-        {open ? 'Hide details' : 'See more'}
-        <i className={`fas fa-chevron-${open ? 'up' : 'down'}`}></i>
-      </button>
-
-      {open && (
-        <div className="team-detail">
-          {member.detail.trim().split('\n\n').map((para, i) => (
-            <p key={i}>{para.trim()}</p>
-          ))}
+      {/* Slide-up overlay — always visible at bottom, expands on hover/click */}
+      <div className={`team-overlay ${open ? 'team-overlay-open' : ''}`}>
+        {/* Always visible: name + role */}
+        <div className="team-overlay-header">
+          <h4 className="team-name">{member.name}</h4>
+          <p className="team-role">{member.role}</p>
         </div>
-      )}
+
+        {/* Revealed on expand: brief + detail + toggle */}
+        <div className="team-overlay-body">
+          <p className="team-brief">{member.brief}</p>
+
+          {open && (
+            <div className="team-detail">
+              {member.detail.trim().split('\n\n').map((para, i) => (
+                <p key={i}>{para.trim()}</p>
+              ))}
+            </div>
+          )}
+
+          <button
+            className="team-toggle-btn"
+            onClick={() => setOpen(!open)}
+            aria-expanded={open}
+          >
+            {open ? 'Close' : 'See more'}
+            <i className={`fas fa-chevron-${open ? 'up' : 'down'}`}></i>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
@@ -386,7 +393,7 @@ const BetanaProjects = () => {
       {/* ── MEET THE TEAM ── */}
       <section id="team" ref={teamRef} className="team-section">
         <div className="section-container">
-          <h2 className="section-title">Meet the Team</h2>
+          <h2 className="section-title-white">Meet the Team</h2>
           <p className="projects-page-sub" style={{ marginBottom: '2.5rem' }}>
             A small, focused team — each person here owns a real part of what we build.
           </p>

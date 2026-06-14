@@ -11,12 +11,13 @@ const Hero = () => {
     >
       <div className="hero-content">
         <p className="hero-eyebrow">· Digital Solutions Studio ·</p>
+        <br />
         <h1>
           We Build <span className="highlight">Purposeful</span> Digital Products
         </h1>
         <br />
-        
         <br />
+        
         <div className="hero-buttons">
           <a href="/projects" className="btn btn-projects">
             Our Work
@@ -25,7 +26,7 @@ const Hero = () => {
             Contact Us
           </a>
         </div>
-        <br />
+        <br /><br /><br />
         <div className="scroll-down">
           <span className="arrow">↓</span>
         </div>

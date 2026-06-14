@@ -11,6 +11,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import BackToTop from './components/BackToTop';
 import BetanaProjects from './pages/BetanaProjects';
+import BurnReveal from './components/Burnreveal';
 
 const Home = () => (
   <>
