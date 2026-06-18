@@ -10,7 +10,7 @@ const Hero = () => {
       style={{ backgroundImage: `url(${africa1})` }}
     >
       <div className="hero-content">
-        <p className="hero-eyebrow">· Digital Solutions Studio ·</p>
+        <p className="hero-eyebrow">· Digital Business Studio ·</p>
         <br />
         <h1>
           We Build <span className="highlight">Purposeful</span> Digital Products
