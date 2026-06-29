@@ -14,6 +14,8 @@ import shellhubImg from '../assets/images/shellhub2.png';
 import bethusilePhoto from '../assets/images/Bethusile_Photo.png';
 import simbaPhoto from '../assets/images/Simba.png';
 import palesaPhoto from '../assets/images/Palesa.png';
+import leboPhoto from '../assets/images/Lebo.jpeg';
+import thaboPhoto from '../assets/images/Thabo.jpeg';
 
 // ── Team data ──────────────────────────────────────────────
 const teamData = [
@@ -50,7 +52,7 @@ She is certified in Azure Fundamentals, Google Data Analytics, and Microsoft Fab
     name: "Lebo Modiko",
     role: "UX/UI & Graphic Designer",
     initials: "LM",
-    photo: null,
+    photo: leboPhoto,
     color: "#791560",
     brief: "Shapes the visual identity of everything Betana creates — inside and out.",
     detail: `Lebo is responsible for the look and feel of Betana's client work and internal brand. From Figma prototypes to meet-the-team cards, she brings a consistent, professional aesthetic to every touchpoint. She leads UX research, wireframing, and design handoff on all studio projects.`,
@@ -59,7 +61,7 @@ She is certified in Azure Fundamentals, Google Data Analytics, and Microsoft Fab
     name: "Thabo Mootwana",
     role: "Business Development Manager",
     initials: "TM",
-    photo: null,
+    photo: thaboPhoto,
     color: "#601250",
     brief: "Identifies and develops strategic partnerships and new business opportunities.",
     detail: `Thabo focuses on growing Betana's pipeline — identifying partnership opportunities, engaging potential clients, and supporting the studio's expansion into new markets and sectors. He works closely with Simba on outreach strategy and with Bethusile on positioning Betana for long-term growth.`,
