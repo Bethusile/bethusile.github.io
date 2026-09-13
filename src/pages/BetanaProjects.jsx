@@ -12,10 +12,9 @@ import shellhubImg from '../assets/images/shellhub2.png';
 
 // Team photos
 import bethusilePhoto from '../assets/images/Bethusile_Photo.png';
-import simbaPhoto from '../assets/images/Simba.png';
-import palesaPhoto from '../assets/images/Palesa.png';
-import leboPhoto from '../assets/images/Lebo.jpeg';
-import thaboPhoto from '../assets/images/Thabo.jpeg';
+import simbaPhoto from '../assets/images/Ndobe.png';
+import palesaPhoto from '../assets/images/Lisa.png';
+
 
 // ── Team data ──────────────────────────────────────────────
 const teamData = [
@@ -28,44 +27,26 @@ const teamData = [
     brief: "Leads strategy, software/data engineering, and technical direction.",
     detail: `Bethusile holds a BCom Honours in Computer Science and Information Systems (Nelson Mandela University, expected 2026) and a BCom in Accounting. She has hands-on experience in full-stack development, data engineering, and financial analytics — with a background spanning FNB, Discovery, and BBD Software Development.
 
-She is certified in Azure Fundamentals, Google Data Analytics, and Microsoft Fabric, and is currently leading Betana's flagship Fintech Anomaly Detection project. Her long-term focus is data-driven business strategy and risk analytics.`,
+She is certified in Azure Fundamentals, Google Data Analytics, and Microsoft Fabric. Her long-term focus is data-driven business strategy and risk analytics.`,
   },
   {
-    name: "Simba Njanji",
-    role: "Head of Sales & Marketing",
+    name: "Daniel Ndobe",
+    role: "Technical Lead",
     initials: "SN",
     photo: simbaPhoto,
     color: "#8B1A6B",
-    brief: "Drives client acquisition and manages Betana's brand presence and outreach.",
-    detail: `Simba leads Betana's go-to-market strategy — managing outreach, partnerships, and LinkedIn content. He brings a commercial lens to everything the studio does, ensuring our work reaches the right clients and our brand communicates clearly and consistently.`,
+    brief: "Drives technical projects",
+    detail: `Daniel is the Technical Lead at Betana, responsible for driving client acquisition and managing the studio's brand presence and outreach efforts. He brings a strong technical background and a commercial mindset to ensure our work reaches the right clients and our brand communicates clearly and consistently.`,
   },
   {
-    name: "Palesa Malele",
+    name: "Lisakhanya Noqala",
     role: "Business Analyst & Project Manager",
     initials: "PM",
     photo: palesaPhoto,
     color: "#A0186F",
     brief: "Keeps projects on track and translates business needs into clear deliverables.",
-    detail: `Palesa bridges the gap between client requirements and the technical team. She handles scoping, contractor agreements, project documentation, and delivery timelines — making sure every project is structured properly from day one and delivered without surprises. She drafted Betana's contractor framework and manages internal project governance.`,
-  },
-  {
-    name: "Lebo Modiko",
-    role: "UX/UI & Graphic Designer",
-    initials: "LM",
-    photo: leboPhoto,
-    color: "#791560",
-    brief: "Shapes the visual identity of everything Betana creates — inside and out.",
-    detail: `Lebo is responsible for the look and feel of Betana's client work and internal brand. From Figma prototypes to meet-the-team cards, she brings a consistent, professional aesthetic to every touchpoint. She leads UX research, wireframing, and design handoff on all studio projects.`,
-  },
-  {
-    name: "Thabo Mootwana",
-    role: "Business Development Manager",
-    initials: "TM",
-    photo: thaboPhoto,
-    color: "#601250",
-    brief: "Identifies and develops strategic partnerships and new business opportunities.",
-    detail: `Thabo focuses on growing Betana's pipeline — identifying partnership opportunities, engaging potential clients, and supporting the studio's expansion into new markets and sectors. He works closely with Simba on outreach strategy and with Bethusile on positioning Betana for long-term growth.`,
-  },
+    detail: `Lisakhanya bridges the gap between client requirements and the technical team. She handles scoping, contractor agreements, project documentation, and delivery timelines — making sure every project is structured properly from day one and delivered without surprises. She drafted Betana's contractor framework and manages internal project governance.`,
+  },  
 ];
 
 // ── Team Member Card ───────────────────────────────────────

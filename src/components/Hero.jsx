@@ -21,7 +21,7 @@ const Hero = () => {
         
         <div className="hero-buttons">
           <a href="/projects" className="btn btn-projects">
-            Our Work
+            Projects
           </a>
           <a href="#contact" className="btn btn-hire">
             Contact Us
