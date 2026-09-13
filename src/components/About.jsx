@@ -201,7 +201,10 @@ const About = ({ id }) => {
           </div>
           <div className="location-item">
             <i className="fas fa-map-marker-alt location-icon"></i>
-            <div className="location-text"><h5>Based In</h5><p>Gqeberha (Port Elizabeth), Eastern Cape.</p></div>
+            <div className="location-text"><h5>Based In</h5>
+            <p>Gqeberha (Port Elizabeth), Eastern Cape.</p>
+            <p>Johannesburg, Gauteng.</p>
+            </div>
           </div>
         </div>
 

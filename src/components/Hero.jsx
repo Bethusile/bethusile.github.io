@@ -13,8 +13,9 @@ const Hero = () => {
         <p className="hero-eyebrow">· Digital Business Studio ·</p>
         <br />
         <h1>
-          We Build <span className="highlight">Purposeful</span> Digital Products
+          Websites and <span className="highlight">Custom </span>  software          
         </h1>
+        <p className="hero-subtitle">We build websites, business applications and automation that help your team work more efficiently.</p>
         <br />
         <br />
         

@@ -140,7 +140,7 @@ export default function Rates({ id }) {
         <div className="hourly-rate-container">
           <div className="hourly-card">
             <p className="rate-label">Hourly Rate</p>
-            <h3 className="rate-value">R150 – R200 <span>/ hour</span></h3>
+            <h3 className="rate-value">From R200 <span>/ hour</span></h3>
             <p className="rate-note">Rate depends on scope and complexity of the project.</p>
           </div>
         </div>
@@ -151,10 +151,10 @@ export default function Rates({ id }) {
           {[
             { name: 'Basic Website',                price: 'R2,500 – R4,000',  desc: 'Simple static site, a few pages' },
             { name: 'Portfolio Website',            price: 'R3,500 – R6,000',  desc: 'Personal or professional portfolio with projects' },
-            { name: 'Custom Web Application',       price: 'R8,000+',          desc: 'Custom functionality, backend logic, integrations' },
-            { name: 'Data Engineering & Analytics', price: 'R6,000+',          desc: 'Pipelines, dashboards, and analytical systems' },
+            { name: 'Custom Web Application',       price: 'R12,000+',          desc: 'Custom functionality, backend logic, integrations' },
+            { name: 'Custom Mobile Application',   price: 'R25,000+',          desc: 'Custom functionality, backend logic, integrations' },
             { name: 'UX Design & Prototyping',      price: 'R3,500+',          desc: 'Wireframes, Figma prototypes, usability testing' },
-            { name: 'Custom Tools & Maintenance',   price: 'R150 – R200 / hr', desc: 'Automation scripts, internal tools, ongoing support' },
+            { name: 'Custom Tools & Maintenance',   price: 'From R200/ hr', desc: 'Automation scripts, internal tools, ongoing support' },
           ].map(({ name, price, desc }) => (
             <div className="package-card" key={name}>
               <p className="p-name">{name}</p>

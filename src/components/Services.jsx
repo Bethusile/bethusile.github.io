@@ -6,9 +6,9 @@ const Services = ({ id }) => {
   const serviceList = [
     {
       number: "01",
-      title: "Web Application Development",
+      title: "Application Development",
       desc: "Full-stack applications built end-to-end — custom frontends, robust APIs, database design, and production-ready deployments tailored to your business.",
-      tags: ["Deployed web app", "API & database", "Source code + docs"],
+      tags: ["Deployed web/mobile app", "API & database", "Source code + docs"],
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
@@ -19,19 +19,6 @@ const Services = ({ id }) => {
     },
     {
       number: "02",
-      title: "Data Engineering & Analytics",
-      desc: "Automated pipelines, BI dashboards, and analytical systems that turn raw data into clear, decision-ready insight for your team.",
-      tags: ["Live BI dashboard", "Automated pipeline", "Insight report"],
-      icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-          <ellipse cx="12" cy="5" rx="9" ry="3" />
-          <path d="M3 5V19A9 3 0 0 0 21 19V5" />
-          <path d="M3 12A9 3 0 0 0 21 12" />
-        </svg>
-      )
-    },
-    {
-      number: "03",
       title: "UX Design & Prototyping",
       desc: "User-centred design from wireframes to interactive Figma prototypes — validating ideas before a single line of code is written.",
       tags: ["Interactive prototype", "Usability report", "Design system"],
@@ -44,7 +31,7 @@ const Services = ({ id }) => {
       )
     },
     {
-      number: "04",
+      number: "03",
       title: "Custom Tools & Maintenance",
       desc: "Bespoke automation scripts, internal management tools, and ongoing support — eliminating manual work and keeping your systems running cleanly.",
       tags: ["Working automation", "Maintenance plan", "Ongoing support"],

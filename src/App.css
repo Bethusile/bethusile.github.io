@@ -579,7 +579,7 @@ html {
 .services-video-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10, 10, 20, 0.78);
+  background: rgba(10, 10, 20, 0.89);
   z-index: 1;
   pointer-events: none;
 }
@@ -602,7 +602,7 @@ html {
 /* 4 columns side by side */
 .services-cols {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   border: 1px solid rgba(193, 28, 132, 0.2);
   border-radius: 14px;
