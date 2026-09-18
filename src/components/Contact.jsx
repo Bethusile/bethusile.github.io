@@ -36,7 +36,7 @@ const Contact = ({ id }) => {
           <h2 className="section-title-white">Get in Touch</h2>
           <p className="contact-intro">
             Have a project in mind or want to discuss an opportunity?<br />
-            I'd love to hear from you.
+            We'd love to hear from you.
           </p>
           <div className="contact-methods">
             <div className="method-item">

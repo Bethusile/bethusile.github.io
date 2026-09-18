@@ -12,7 +12,7 @@ import shellhubImg from '../assets/images/shellhub2.png';
 
 // Team photos
 import bethusilePhoto from '../assets/images/Bethusile_Photo.png';
-import simbaPhoto from '../assets/images/Ndobe.png';
+import simbaPhoto from '../assets/images/DanielN.jpeg';
 import palesaPhoto from '../assets/images/Lisa.png';
 
 
@@ -32,20 +32,20 @@ She is certified in Azure Fundamentals, Google Data Analytics, and Microsoft Fab
   {
     name: "Daniel Ndobe",
     role: "Technical Lead",
-    initials: "SN",
+    initials: "DN",
     photo: simbaPhoto,
     color: "#8B1A6B",
-    brief: "Drives technical projects",
-    detail: `Daniel is the Technical Lead at Betana, responsible for driving client acquisition and managing the studio's brand presence and outreach efforts. He brings a strong technical background and a commercial mindset to ensure our work reaches the right clients and our brand communicates clearly and consistently.`,
+    brief: "Leads technical direction",
+    detail: `Daniel is the Technical Lead at Betana, responsible for shaping technical direction and turning ideas into reliable digital products. He leads solution design, guides development standards, reviews critical work, and helps the team solve complex challenges. With a strong software engineering background and a practical business mindset, he ensures every solution is scalable, maintainable, and aligned with client needs.`,
   },
   {
     name: "Lisakhanya Noqala",
-    role: "Business Analyst & Project Manager",
-    initials: "PM",
+    role: "Project Coordinator",
+    initials: "LN",
     photo: palesaPhoto,
     color: "#A0186F",
-    brief: "Keeps projects on track and translates business needs into clear deliverables.",
-    detail: `Lisakhanya bridges the gap between client requirements and the technical team. She handles scoping, contractor agreements, project documentation, and delivery timelines — making sure every project is structured properly from day one and delivered without surprises. She drafted Betana's contractor framework and manages internal project governance.`,
+    brief: "Keeps projects moving and clients informed at every step.",
+    detail: `Lisakhanya is the Project Coordinator at Betana, keeping projects organised and on schedule from kickoff to delivery. She coordinates meetings and reminders, supports client sourcing, and maintains clear documentation across every engagement. Acting as a steady point of contact between the team and clients, she assists with stakeholder engagement and makes sure nothing falls through the cracks.`,
   },  
 ];
 
