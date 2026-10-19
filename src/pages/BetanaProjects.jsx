@@ -14,6 +14,7 @@ import shellhubImg from '../assets/images/shellhub2.png';
 import bethusilePhoto from '../assets/images/Bethusile_Photo.png';
 import simbaPhoto from '../assets/images/DanielN.jpeg';
 import palesaPhoto from '../assets/images/Lisa.png';
+import sakhilePhoto from '../assets/images/Sakhile.jpeg';
 
 
 // ── Team data ──────────────────────────────────────────────
@@ -47,6 +48,17 @@ She is certified in Azure Fundamentals, Google Data Analytics, and Microsoft Fab
     brief: "Keeps projects moving and clients informed at every step.",
     detail: `Lisakhanya is the Project Coordinator at Betana, keeping projects organised and on schedule from kickoff to delivery. She coordinates meetings and reminders, supports client sourcing, and maintains clear documentation across every engagement. Acting as a steady point of contact between the team and clients, she assists with stakeholder engagement and makes sure nothing falls through the cracks.`,
   },  
+    {
+    name: "Sakhile Nkuna",
+    role: "Graphic Designer",
+    initials: "SN",
+    photo: sakhilePhoto,
+    color: "#1A6B8B",
+    brief: "Creates visuals that communicate clearly and leave an impression.",
+    detail: `Sakhile brings years of design experience from creating visuals for his church community — work that taught him how to speak to an audience visually with purpose and clarity. He studied computer science, which gives him an edge in understanding how design translates to digital products.
+
+Beyond client work, Sakhile is passionate about teaching coding and digital skills to youth from rural areas — a mission that aligns closely with Betana's roots and values.`,
+  },
 ];
 
 // ── Team Member Card ───────────────────────────────────────
