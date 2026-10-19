@@ -141,7 +141,7 @@ const About = ({ id }) => {
 
         <p className="about-description">
           Betana is a registered digital solutions studio based in South Africa.
-          We design and build web applications, data systems, and software products for
+          We design and build web applications, data systems, software products and accounting services for
           businesses across South Africa - combining technical depth with a clear focus
           on delivering real business value.
         </p>

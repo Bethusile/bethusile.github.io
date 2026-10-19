@@ -153,7 +153,6 @@ export default function Rates({ id }) {
             { name: 'Portfolio Website',            price: 'R3,500 – R6,000',  desc: 'Personal or professional portfolio with projects' },
             { name: 'Custom Web Application',       price: 'R12,000+',          desc: 'Custom functionality, backend logic, integrations' },
             { name: 'Custom Mobile Application',   price: 'R25,000+',          desc: 'Custom functionality, backend logic, integrations' },
-            { name: 'UX Design & Prototyping',      price: 'R3,500+',          desc: 'Wireframes, Figma prototypes, usability testing' },
             { name: 'Custom Tools & Maintenance',   price: 'From R200/ hr', desc: 'Automation scripts, internal tools, ongoing support' },
           ].map(({ name, price, desc }) => (
             <div className="package-card" key={name}>
